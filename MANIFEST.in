@@ -1,0 +1,7 @@
+include README.md
+include README_CN.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include LICENSE
+recursive-include .agents/skills/hydro-yearbook-digitizer *.md *.yaml *.csv *.py
+recursive-include .github *.yml

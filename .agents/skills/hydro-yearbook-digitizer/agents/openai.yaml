@@ -1,0 +1,4 @@
+interface:
+  display_name: "水文年鉴表格数字化"
+  short_description: "提取并复核水文年鉴的站点、月年均和逐日表格"
+  default_prompt: "使用 $hydro-yearbook-digitizer 将水文年鉴中的月均、年均、日值和站点信息提取为可追溯复核的 Excel。"

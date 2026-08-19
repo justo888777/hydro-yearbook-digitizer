@@ -1,0 +1,34 @@
+# Python build and test artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local environments and editor files
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Hydrological source material and generated project data
+raw/
+work/
+outputs/
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.xlsx
+*.xls
+*.csv
+*.jsonl
+
+# Local configuration and secrets
+.env
+*.log

@@ -1,0 +1,14 @@
+columns:
+  daily_mean_water_level: 逐日平均水位
+  flood_water_level_excerpt: 洪水水位摘录
+  measured_discharge_results: 实测流量成果
+  measured_cross_section_results: 实测大断面成果
+  daily_mean_discharge: 逐日平均流量
+  flood_hydrology_excerpt: 洪水水文要素摘录
+  measured_suspended_sediment_results: 实测悬移质泥沙成果
+  daily_mean_sediment_concentration: 逐日平均含沙量
+  daily_mean_suspended_sediment_discharge: 逐日平均悬移质输沙率
+  flood_suspended_sediment_results: 洪水悬移质泥沙成果
+  measured_particle_size_results: 实测悬移质颗粒级配成果
+  monthly_annual_particle_size: 月年平均悬移质颗粒级配
+  daily_water_temperature: 逐日水温

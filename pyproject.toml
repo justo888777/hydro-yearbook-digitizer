@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydro-yearbook-digitizer"
+version = "0.2.27"
+description = "Source-audited digitization workflow and Codex skill for hydrological yearbook tables"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Hydro Yearbook Digitizer Contributors"}]
+keywords = ["hydrology", "ocr", "digitization", "yearbook", "excel"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Hydrology",
+]
+dependencies = [
+  "openpyxl>=3.1",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+image = [
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "opencv-python-headless>=4.9",
+]
+ocr = ["rapidocr_onnxruntime>=1.4"]
+table = ["paddleocr==2.9.1", "paddlepaddle==3.2.2"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+hydro-yearbook = "hydro_yearbook_digitizer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/justo888777/hydro-yearbook-digitizer"
+Source = "https://github.com/justo888777/hydro-yearbook-digitizer"
+Issues = "https://github.com/justo888777/hydro-yearbook-digitizer/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
